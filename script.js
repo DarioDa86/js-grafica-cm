@@ -5,10 +5,12 @@
 // 1- Richiede all'utente un numero
 var numCell = prompt("inserisci un numero da 1 a 100");
 
+// 2- creo il mio programma che inserisce il numero di quadrati indicati dall'utente
 for (var i = 1; i <= numCell; i++) {
     document.getElementById("scacchiera").innerHTML += `<div class="quadrato">${i}</div>`;
 }
 
+// 3- Creo l'evento al "click" dell'utente, che colora il quadrato e fa uscire l'alert con il numero del quadrato selezionato
 document.getElementById("scacchiera").addEventListener("click",
     function(event) {
         event.target.classList.toggle("cliccato");
